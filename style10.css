@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Alkatra:wght@400..700&display=swap');
+
+*{
+    font-family: "Alkatra", serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: #FF004A;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo{
+    text-decoration: none;
+    color: #920AFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.navigation a{
+    color: #920AFF;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+.navigation a:hover{
+    color: #19C7A9;
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(shefo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: #1D77C3;
+    font-size: 3em;
+    font-weight: 600;
+}
+.main h3{
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.maim-btn{
+    color: wheat;
+    background-color: #152D73;
+    text-decoration: none;
+    font-size: 1.1.em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+.maim-btn:hover{
+    background-color: #0A1842;
+    transform: scale(1.1);
+}
+.social-icons a{
+    color: white;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #1D77C3;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.contant{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    transition: 0.7s ease;
+}
+/* .cards-container{
+    display: flex;
+    gap: 20px;
+} */
+.card:hover{
+    transform: scale(1.1); 
+}
+.icon{
+    color: #1D77C3;
+    font-size: 8em;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #1D77C3;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.projects{
+    background-color: #0A1842;
+}
+.projects .contant{
+    margin-top: 30px;
+}
+.Project-Card{
+    background-color: white;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+    justify-content: center;
+    flex-direction: row;
+    display: inline-block;
+}
+.Project-Card:hover{
+    transform: scale(1.1);
+}
+.Project-Card:hover .Project-Image{
+    opacity: 0.9;
+}
+.Project-Image img{
+    width: 100%;
+}
+.Project-info{
+    padding: 1em;
+}
+.Project-category{
+    font-size: 0.8em;
+    color: brown;
+}
+.Project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.more-details{
+    text-decoration: none;
+    color: #1D77C3;
+}
+.more-details:hover{
+    color: #152D73;
+}
+.contact .icon{
+    font-size: 4.5em;
+}
+.contact .info h3{
+    color: rgb(251, 76, 248)
+}
+.contact .info p{
+    font-size: 1.5em;
+    color: blue;
+}
+.footer{
+    background-color: #0A1842;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title span{
+    color: #920AFF;
+}
+.footer .social-icons a{
+     font-size: 1.3em;
+     padding: 0 12px 0 0;
+}
+@media (max-width: 1023px;){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main-content h2{
+        font-size: 1em;
+    }
+    .main-content h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 641px){
+    body{
+        font-size: 12px;
+    }
+    .main-content h2{
+        font-size: 0.8em;
+    }
+.main-content h3{
+    font-size: 1.4em;
+    }
+}
+@media (max-width: 300px){
+    body{
+        font-size: 10px;
+    }
+}
